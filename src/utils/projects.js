@@ -1,9 +1,4 @@
-import { DiHtml5, DiCss3, DiJavascript, DiReact } from "react-icons/di";
-
-const html = <DiHtml5 size="2rem" color="#E65100" />;
-const css = <DiCss3 size="2rem" color="#0277BD" />;
-const javascript = <DiJavascript size="2rem" color="#FFD600" />;
-const react = <DiReact size="2rem" color="#61DEFB" />;
+import {html, css, javascript, react, mongoDB, nodeJS, express} from './icons'
 
 const projects = [
   {
@@ -14,8 +9,7 @@ const projects = [
     icons: [html, css, javascript],
     description: (
       <div className="description">
-        Componente de preço interativo com slider, desenvolvido para praticar
-        javascript.<br></br>
+        Componente de preço interativo com slider.<br></br>
         <span>
           Ideia do projeto em{" "}
           <a href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8">
@@ -34,7 +28,7 @@ const projects = [
     icons: [html, css, javascript],
     description: (
       <div className="description">
-        Página de doações com modal para a janela de doações.<br></br>
+        Página de doações com modal para a janela de doação.<br></br>
         <span>
           {" "}
           Ideia do projeto em{" "}
@@ -68,21 +62,15 @@ const projects = [
   {
     id: 4,
     path: "/",
-    projectName: "Job Listing",
-    imagePath: "images/job-listing-react.png",
-    icons: [html, css, javascript, react],
+    projectName: "Sistema de controle financeiro",
+    imagePath: "images/pagina-em-construcao.png",
+    icons: [html, css, javascript, react, mongoDB, nodeJS, express],
     description: (
       <div className="description">
-        Listagem de empregos por categorias.<br></br>{" "}
-        <span>
-          Ideia do projeto em{" "}
-          <a href="https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt">
-            Frontend Mentor
-          </a>
-          .
-        </span>
+        Sistema de controle financeiro completo.
       </div>
     ),
+    disabled: true,
   },
 ];
 

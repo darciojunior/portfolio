@@ -8,10 +8,10 @@ const ProjectContainer = () => {
             <div className="title">
                 PROJETOS
             </div>
-            <div className="content">
+            <div className="content-container">
                 {projects.map((project) => {
-                    const { id, path, projectName, imagePath, icons, description } = project
-                    return <ProjectCard key={id} path={path} projectName={projectName} imagePath={imagePath} icons={icons} description={description} />
+                    const { id, path, projectName, imagePath, icons, description, disabled } = project
+                    return <ProjectCard key={id} path={path} projectName={projectName} imagePath={imagePath} icons={icons} description={description} disabled={disabled}/>
                 })}
             </div>
         </Wrapper>
@@ -30,7 +30,7 @@ background: rgba(30, 30, 30, 0.8);
     background-size: cover;
     color: #FFF;
 }
-.content {
+.content-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 2rem;

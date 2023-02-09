@@ -1,10 +1,11 @@
 import styled from "styled-components"
+import { Icons } from '.'
 
 
-const ProjectCard = ({ path, projectName, imagePath, icons, description }) => {
+const ProjectCard = ({ path, projectName, imagePath, icons, description, disabled }) => {
     return (
         <Wrapper>
-            <a href={path} className="project-image-container">
+            <a href={path} className={disabled ? "project-image-container disabled" : "project-image-container"} target='_blank' rel="noreferrer">
                 <img src={imagePath} alt="" />
                 <div className="project-name">{projectName}</div>
             </a>
@@ -12,7 +13,7 @@ const ProjectCard = ({ path, projectName, imagePath, icons, description }) => {
                 <div>Linguagens usadas</div>
                 <div className="icons-container">
                     {icons.map((icon, index) => {
-                        return <div className="icon" key={index}>{icon}</div>
+                        return <Icons icon={icon} key={index} />
                     })}
                 </div>
                 <div>Descrição</div>
@@ -25,8 +26,11 @@ const Wrapper = styled.div`
 background-color: rgba(150, 150, 150, 0.6);
 border-radius: .5rem;
 :hover>.project-image-container>img{
-    filter: grayscale(0)
+    transition-duration: .5s; 
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
+
 .project-image-container {
     display: flex;
     justify-content: center;
@@ -45,6 +49,9 @@ border-radius: .5rem;
     background-color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
 }
+.project-image-container.disabled {
+    pointer-events: none;
+}
 img {
     filter: grayscale(100)
 }
@@ -61,6 +68,7 @@ img {
     align-items: center;
     flex-direction: column;
     padding: 0 1rem 1rem 1rem;
+    gap: .5rem;
 }
 .description-container>div:nth-child(2n-1) {
     background-color: rgba(36, 36, 36, 0.6);
@@ -77,25 +85,15 @@ span>a {
     color: #b6b6b6;
 }
 span>a:hover {
-    color: black;
+    color: #000;
     font-weight: bold;
 }
 .icons-container {
     display: flex;
     justify-content: center;
     gap: .5rem;
-    margin: .5rem 0;
 }
-.icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(170, 170, 170, 0.6);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
+
 .description {
     color: #E7E7E7;
     width: 100%;
