@@ -27,6 +27,7 @@ position: relative;
   background: url('/images/background.jpg') no-repeat center center fixed;
   background-size: cover;
   opacity: 0.8;
+  min-height: 100vh;
 }
 
 //CSS dos icones

@@ -10,8 +10,7 @@ const ProjectContainer = () => {
             </div>
             <div className="content-container">
                 {projects.map((project) => {
-                    const { id, path, projectName, imagePath, icons, description, disabled } = project
-                    return <ProjectCard key={id} path={path} projectName={projectName} imagePath={imagePath} icons={icons} description={description} disabled={disabled}/>
+                    return <ProjectCard key={project.id} project={project}/>
                 })}
             </div>
         </Wrapper>

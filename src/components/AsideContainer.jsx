@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { html, css, javascript, react, mongoDB, nodeJS, express } from '../utils/icons'
+import allIcons from '../utils/icons'
 import { Icons } from '.'
 
 const AsideContainer = () => {
@@ -11,18 +11,14 @@ const AsideContainer = () => {
             <div className="content-container">
                 <div>
                 <div className="content-title">Sobre mim</div>
-                <div className="content">Formado em ciência da computação, tenho 26 anos e moro em Sumaré/SP. <br></br>Estou estudando programação por conta própria e através de cursos online e desenvolvendo um portfolio para praticar.</div>
+                <div className="content">Formado em ciência da computação, tenho 26 anos e moro em Sumaré/SP. <br></br>Estou estudando programação por conta própria e através de cursos online e desenvolvendo um portfólio para praticar.</div>
                 </div>
                 <div>
                     <div className="content-title">Skills</div>
                     <div className="skills-icons">
-                        <Icons icon={html} spanText='HTML5' />
-                        <Icons icon={css} spanText='CSS' />
-                        <Icons icon={javascript} spanText='Javascript' />
-                        <Icons icon={react} spanText='React' />
-                        <Icons icon={mongoDB} spanText='mongoDB' />
-                        <Icons icon={nodeJS} spanText='Node.js' />
-                        <Icons icon={express} spanText='Express.js' />
+                        {allIcons.map((icon, index) => {
+                            return <Icons icon={icon} key={index} spanText={icon.props.label} />
+                        })}
                     </div>
                 </div>
 
@@ -80,7 +76,7 @@ background: rgba(30, 30, 30, 0.8);
 }
 span {
     display: none;
-    background-color: rgba(36, 36, 36, 0.6);
+    background-color: rgba(0, 0, 0);
     padding: .2rem .5rem;
     border-radius: 50px;
     font-weight: 300;
