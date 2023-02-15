@@ -5,7 +5,7 @@ const [html, css, javascript, react, mongoDB, nodeJS, express] = allIcons
 const projects = [
   {
     id: 1,
-    path: "/",
+    path: "https://darciojunior.github.io/interactive-pricing-component/",
     projectName: "Interactive Pricing Component",
     imagePath: "images/interactive-pricing-component.png",
     icons: [html, css, javascript],
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     id: 2,
-    path: "/",
+    path: "https://darciojunior.github.io/crowdfunding-product-page/",
     projectName: "Crowdfunding Page",
     imagePath: "images/crowdfunding-product-page.png",
     icons: [html, css, javascript],
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     id: 3,
-    path: "/",
+    path: "https://darciojunior.github.io/job-listing-react/",
     projectName: "Job Listing",
     imagePath: "images/job-listing-react.png",
     icons: [html, css, javascript, react],
