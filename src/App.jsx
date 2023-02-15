@@ -24,7 +24,7 @@ position: relative;
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url('/images/background.jpg') no-repeat center center fixed;
+  background: url('./images/background.jpg') no-repeat center center fixed;
   background-size: cover;
   opacity: 0.8;
   min-height: 100vh;
