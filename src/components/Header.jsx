@@ -34,6 +34,9 @@ background: linear-gradient(#000000 80%,rgba(0,0,0,0));
     text-decoration: none;
     color:rgba(139, 60, 127, 0.7);
   }
+  a:hover{
+    color:rgba(139, 60, 127, 0.9);
+  }
   @media (max-width: 640px) {
     background: linear-gradient(#000000 80%,rgba(0,0,0,0));
     flex-direction: column;
