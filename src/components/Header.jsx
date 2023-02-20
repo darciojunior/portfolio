@@ -42,7 +42,17 @@ background: linear-gradient(#000000 80%,rgba(0,0,0,0));
       height: 100px;
     }
     nav {
-      padding: 1rem 0
+      padding: 1rem 0;
+    }
+  }
+  @media (max-width: 460px) {
+    .logo {
+      width: 80%;
+      margin: 0 auto;
+      padding: .5rem;
+    }
+    nav {
+      padding: .5rem;
     }
   }
 `

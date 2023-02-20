@@ -36,8 +36,18 @@ background: rgba(30, 30, 30, 0.8);
     padding: 2rem;
 }
 @media (max-width: 640px) {
-    .content {
+    .content-container {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+@media (max-width: 460px) {
+    .title {
+        padding: 1rem;
+    }
+    .content-container {
+        grid-template-columns: auto;
+        padding: 1rem .5rem;
+        grid-gap: 1rem;
     }
 }
 `

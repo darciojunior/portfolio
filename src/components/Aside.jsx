@@ -20,6 +20,9 @@ padding: 3rem 3rem 3rem 1rem;
 @media (max-width: 640px) {
     padding: 1rem;
 }
+@media (max-width: 460px) {
+    padding: .5rem;
+}
 `
 
 export default Aside

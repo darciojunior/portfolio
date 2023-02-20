@@ -10,8 +10,8 @@ const AsideContainer = () => {
             </div>
             <div className="content-container">
                 <div>
-                <div className="content-title">Sobre mim</div>
-                <div className="content">Formado em ciência da computação, tenho 26 anos e moro em Sumaré/SP. <br></br>Estou estudando programação por conta própria e através de cursos online e desenvolvendo um portfólio para praticar.</div>
+                    <div className="content-title">Sobre mim</div>
+                    <div className="content">Formado em ciência da computação, tenho 26 anos e moro em Sumaré/SP. <br></br>Estou estudando programação por conta própria e através de cursos online e desenvolvendo um portfólio para praticar.</div>
                 </div>
                 <div>
                     <div className="content-title">Skills</div>
@@ -94,31 +94,39 @@ span {
     color: #E7E7E7;
 }
 @media (max-width: 1280px) {
-.content-container {
-    flex-direction: row;
-}
-.content-container>div {
-    display: flex;
-    flex-direction: column;
-}
-.content, .skills-icons {
-    height: 100%;
-}
+    .content-container {
+        flex-direction: row;
+    }
+    .content-container>div {
+        display: flex;
+        flex-direction: column;
+    }
+    .content, .skills-icons {
+        height: 100%;
+    }
 }
 @media (max-width: 1030px) {
-.content-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.content-container>div:first-child {
-    grid-column: span 2;
-}
+    .content-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-container>div:first-child {
+        grid-column: span 2;
+    }
 }
 @media (max-width: 640px) {
-.content-container {
-    display: flex;
-    flex-direction: column;
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
+@media (max-width: 460px) {
+    .title{
+        padding: 1rem;
+    }
+    .content-container {
+        padding: 1rem .5rem;
+    }
 }
 `
 export default AsideContainer

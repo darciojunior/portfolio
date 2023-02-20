@@ -180,6 +180,15 @@ img {
     background-color: rgba(36, 36, 36, 0.6);
     color: #FFF;
 }
+@media (max-width: 460px) {
+    .project-name {
+        width: 80%;
+        text-align: center;
+    }
+    .project-image-container {
+        height: 300px;
+    }
+}
 `
 export default ProjectCard
 
