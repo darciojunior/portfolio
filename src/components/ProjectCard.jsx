@@ -63,7 +63,7 @@ const ProjectCard = ({ project }) => {
                     </div>
                     <div>Descrição</div>
                     {description}
-                    {(windowWidth < 640) && <button onClick={() => window.location.href = path} type="button" className="redirect-btn">Redirecionar ao projeto</button>}
+                    {(windowWidth < 640) && <button onClick={() => window.open(path, '_blank')} type="button" className="redirect-btn">Redirecionar ao projeto</button>}
                 </div>
                 <div className="project-name">{projectName}</div>
             </a>
