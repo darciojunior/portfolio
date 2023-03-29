@@ -63,16 +63,15 @@ const projects = [
   },
   {
     id: 4,
-    path: "/",
-    projectName: "Em breve - Sistema de controle financeiro",
-    imagePath: "images/pagina-em-construcao.png",
+    path: "https://sistema-controle-financeiro.onrender.com",
+    projectName: "Sistema de controle financeiro",
+    imagePath: "images/sistema-controle-financeiro.png",
     icons: [html, css, javascript, react, mongoDB, nodeJS, express],
     description: (
       <div className="description">
         Sistema de controle financeiro completo.
       </div>
     ),
-    disabled: true,
   },
 ];
 

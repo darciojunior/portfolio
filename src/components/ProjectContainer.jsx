@@ -31,13 +31,28 @@ background: rgba(30, 30, 30, 0.8);
 }
 .content-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     padding: 2rem;
 }
-@media (max-width: 640px) {
+@media (max-width: 1480px) {
     .content-container {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 1280px) {
+    .content-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1070px) {
+    .content-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 760px) {
+    .content-container {
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 460px) {

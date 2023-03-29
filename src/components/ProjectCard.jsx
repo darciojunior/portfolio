@@ -124,6 +124,7 @@ img {
 .icons-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: .5rem;
 }
 .icon {
@@ -174,17 +175,15 @@ img {
 }
 .project-name {
     position: absolute;
-    bottom: 5px;
+    text-align: center;
+    bottom: .3rem;
+    max-width: 14rem;
     padding: .5rem 1rem;
     border-radius: 50px;
     background-color: rgba(36, 36, 36, 0.6);
     color: #FFF;
 }
 @media (max-width: 460px) {
-    .project-name {
-        width: 80%;
-        text-align: center;
-    }
     .project-image-container {
         height: 300px;
     }
